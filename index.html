@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devesh Soni | Professional Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fdfdfd;
+            --text: #1a1a1a;
+            --muted: #666666;
+            --border: #e0e0e0;
+            --accent: #222;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .resume-page {
+            max-width: 950px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 1200px;
+        }
+
+        /* Sidebar Section */
+        .sidebar {
+            background-color: #f7f7f5;
+            padding: 40px 30px;
+            border-right: 1px solid var(--border);
+        }
+
+        .profile-photo {
+            width: 100%;
+            aspect-ratio: 1/1.1;
+            background: #eee;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .profile-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+        .sidebar-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin: 30px 0 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .list-item { font-size: 0.85rem; margin-bottom: 8px; color: var(--text); list-style: none; }
+
+        /* Main Content Section */
+        .main-content { padding: 50px 60px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 5px; }
+        .subtitle { text-transform: uppercase; letter-spacing: 5px; font-size: 0.85rem; color: var(--muted); margin-bottom: 50px; }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        .profile-desc { font-size: 1rem; color: #444; text-align: justify; margin-bottom: 20px; }
+
+        /* Timeline Styling */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin-top: 20px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: var(--border);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid white;
+        }
+        .time-year { font-weight: 700; font-size: 1rem; color: var(--accent); display: block; }
+        .time-content { font-size: 0.95rem; color: #555; }
+        .time-school { font-weight: 600; color: var(--text); }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .resume-page { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-page">
+        <aside class="sidebar">
+            <div class="profile-photo">
+                <img src="./Images/WhatsApp Image 2026-03-21 at 1.15.43 PM.jpeg" alt="Devesh Soni">
+            </div>
+
+            <h2 class="sidebar-title">Contact</h2>
+            <p class="list-item">Lalitpur, India</p>
+            <p class="list-item">deveshind2006@gmail.com</p>
+            <p class="list-item">7068335350</p>
+
+            <h2 class="sidebar-title">Skills</h2>
+            <ul class="list-item">
+                <li>Trading & Technical Analysis</li>
+                <li>HTML5 & CSS3</li>
+                <li>Business Strategy</li>
+                <li>UX Analysis</li>
+                <li>MS Office</li>
+                <li>Emotional Intelligence</li>
+                <li>Team Management</li>
+            </ul>
+
+            <h2 class="sidebar-title">Interests</h2>
+            <ul class="list-item">
+                <li>Stock Trading</li>
+                <li>Badminton (Athlete)</li>
+                <li>Gym & Fitness</li>
+                <li>Guitar</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Devesh Soni</h1>
+                <p class="subtitle">BBA Student | IIMB</p>
+            </header>
+
+            <section>
+                <h2 class="section-title">Profile</h2>
+                <p class="profile-desc">
+                    A highly motivated BBA student at IIMB with a deep interest in digital business strategies. 
+                    <strong>State-Selected Athlete in 800m</strong> with excellent timings, and actively compete in <strong>Badminton</strong>. My athletic background has instilled in me a high level of discipline and the ability to perform under pressure. 
+                    During my 12th grade at Prince Sainik School, I served as the <strong>Hostel Head and Class Prefect</strong>, managed student coordination and maintained campus discipline. 
+                    Combined this leadership experience with my passion for financial markets and trading to build a versatile professional profile.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Education Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="time-year">2026 — Present</span>
+                        <div class="time-content">
+                            <span class="time-school">Indian Institute of Management Bangalore (IIMB)</span><br>
+                            Pursuing BBA in Digital Business and Entrepreneurship.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time-year">2025</span>
+                        <div class="time-content">
+                            <span class="time-school">Prince Sainik School, Sikar</span><br>
+                            Completed 12th Grade with a focus on disciplined learning and academic excellence.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time-year">2023</span>
+                        <div class="time-content">
+                            <span class="time-school">Delhi Public School, Jhansi</span><br>
+                            Completed 10th Grade, achieving strong results and laying the foundation for my future studies.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Professional Learning</h2>
+                <p class="profile-desc">
+                    Combined my passion for finance with technical skills learned at <strong>IIM Bangalore</strong>. 
+                    While I learned <strong>Web Development</strong> (HTML/CSS) through the IIMBx Programme, I independently mastered Stock Market Analytics, which helps me understand the intersection of technology and finance FinTech.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Stock Market Internship</h2>
+                <div class="entry">
+                    <p style="font-weight: 600;">Equity Research & Trading Intern</p>
+                    <p class="entry-sub">Self-Directed / Industry Training | 2026</p>
+                    
+                    <ul style="list-style: disc; margin-left: 20px; font-size: 0.9rem; color: #444;">
+                        <li>Performed <strong>Technical Analysis</strong> on Nifty/BankNifty using Price Action and Candlestick patterns.</li>
+                        <li>Developed a <strong>Risk Management Framework</strong> to optimize position sizing and capital preservation.</li>
+                        <li>Created a comprehensive <strong>Stock Market PPT</strong> on Sector Analysis and Intraday Trading strategies.</li>
+                        <li>Analyzed market trends and volatility to identify high-probability trading setups.</li>
+                    </ul>
+
+                    <div style="margin-top: 15px;">
+                        <a href="https://drive.google.com/file/d/1RVsI5YO8If-nGTmNOD_IaEZvnanJWjEK/view?usp=sharing" class="project-link" style="margin-right: 10px; background: #eee; padding: 5px 10px; border-radius: 4px; text-decoration: none; color: black; font-size: 0.8rem;">📊 View Trading PPT</a>
+                        <a href="https://drive.google.com/file/d/1immyGGAImEw4lhD2zxp5v2apaUXgJnXn/view?usp=sharing" class="project-link" style="background: #eee; padding: 5px 10px; border-radius: 4px; text-decoration: none; color: black; font-size: 0.8rem;">📖 View Report</a>
+                        <a href="https://drive.google.com/file/d/1YahIcmlJO1D42n_tQSjUm58aVJdOHDKK/view?usp=sharing" class="project-link" style="margin-right: 10px; background: #eee; padding: 5px 10px; border-radius: 4px; text-decoration: none; color: black; font-size: 0.8rem;">📜 View Certificate</a>
+                     </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Key Projects</h2>
+                <div class="entry">
+                    <p style="font-weight: 600;">Website Analysis: The Little Flower Soap Co.</p>
+                    <p class="profile-desc">
+                        Conducted a comprehensive audit of the e-commerce platform for "The Little Flower Soap Co." My analysis focused on their UI/UX design, visual branding through Color Theory, and how their website structure supports their business objectives. Provided actionable suggestions to enhance user engagement and conversion.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1_bv2I8o1apH5E2aLAVOyTZtBXLbTVxdF/view?usp=sharing" class="project-link">View Project Report →</a>
+                </div>
+            </section>
+
+            <section style="margin-top: 30px;">
+                <h2 class="section-title">Leadership & Sports</h2>
+                <div class="entry">
+                    <p style="font-weight: 600;">Hostel Head & Class Prefect</p>
+                    <p class="entry-sub">Prince Sainik School, Sikar | 2024-2025</p>
+                    <p class="profile-desc" style="font-size: 0.9rem;">
+                        Responsible for managing hostel operations, student welfare, and maintaining academic decorum as a Class Prefect.
+                    </p>
+                </div>  
+                <div class="entry">
+                    <p style="font-weight: 600;">State Selected Athlete (800m)</p>
+                    <p class="profile-desc" style="font-size: 0.9rem;">
+                        Represented at the state level in 800m track events with consistent high-performance timings.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Extra-Curricular Activities</h2>
+                <div class="entry">
+                    <p style="font-weight: 600;">Parade Band Head & Ceremonial Commander</p>
+                    <p class="entry-sub">Prince Sainik School, Sikar | 2024-2025</p>
+                    <ul style="list-style: disc; margin-left: 20px; font-size: 0.9rem; color: #444;">
+                        <li>Led the school's <strong>Parade Band</strong> as the Head, coordinating musical performances for major campus events.</li>
+                        <li>Served as the <strong>Main Commander</strong> during the prestigious national flag retreating ceremony, demonstrating high precision and patriotism.</li>
+                    </ul>
+                </div>
+                
+                <div class="entry" style="margin-top: 15px;">
+                    <p style="font-weight: 600;">Yoga Gold Medalist</p>
+                    <p class="entry-sub">Doon Public School | Summer Camp Achievement</p>
+                    <p class="profile-desc" style="font-size: 0.9rem;">
+                        Achieved a <strong>Gold Medal</strong> and an official certificate for excellence in Yoga, demonstrating physical flexibility and mental focus.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html> 
